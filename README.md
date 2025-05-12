@@ -1,7 +1,7 @@
 # 🛒 E-commerce Grocery Website
 
 A sleek, modern grocery shopping website built for simplicity, speed, and a smooth user experience.
-Designed to bring the convenience of a supermarket to your fingertips, 
+Designed to bring the convenience of a supermarket to your fingertips,
 this front-end project lets users browse, add to cart, and prepare for checkout — just like a real online store.
 
 ## 🍉 Features
@@ -22,7 +22,8 @@ this front-end project lets users browse, add to cart, and prepare for checkout 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Laawigit/E-comerce-Grocery-web.git
-Open index.html in your browser to view the app.
+   Open index.html in your browser to view the app.
+   ```
 
 🎯 Goals
 This project was built to practice:
@@ -41,8 +42,7 @@ Handling cart logic with plain JavaScript
 Creating reusable HTML components
 
 🖼 Screenshot
-(Add a real screenshot in /assets/screenshot.png and replace the line below)
-
+!["grocery preview"](images/index/GrocerySceenshot.PNG)
 
 🚀 Future Improvements
 Product filter by category or price
