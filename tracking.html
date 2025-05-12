@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracking</title>
+ 
+    <link rel="stylesheet" href="css/tracking.css">
+  </head>
+  <body>
+    <header class="header">
+    <nav class="nav">
+    <a href="index.html" class="logo">GroceMart</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="orders.html">My orders</a></li>
+        <li><a href="about.html">About</a></li>
+      <li><a href="javascript:void(0)" class="cart-icon js-cart-icon">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- ////////////////////////////////////////////////////////////////////////// -->
+     <div class="cart-popup-container js-cart-popup-container">
+              <section class="cart-items-container js-cart-items-container"></section>
+              <section class="cart-footer">
+              <p class="subtotal-container">Subtotal: <span class="subtotal js-subtotal"></span></p>
+              <button class="checkout-btn js-checkout-btn">Check out</button>
+              <div class="cart-note-container">
+              <p class="cart-note">Shipping, taxes, and discount codes</p>
+              <p class="cart-note">calculated at checkout.</p>    
+              </section>
+          </div>
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <div class="main js-main">
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+      <footer>
+  <div class="footer-section contact-info">
+    <h3>Contact Info</h3>
+    <p>Email: support@grocemart.com</p>
+    <p>Phone: +123-456-7890</p>
+  </div>
+  <div class="footer-section services">
+    <h3>Services</h3>
+    <p>Delivery</p>
+    <p>Returns</p>
+    <p>Support</p>
+  </div>
+  <div class="footer-section send-email">
+    <h3>Send Us an Email</h3>
+    <input type="email" placeholder="Your email">
+    <button>Send</button>
+  </div>
+  <div class="footer-section social-links">
+    <h3>Follow Us</h3>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </div>
+  <div class="footer-section payment-methods">
+    <h3>We Accept</h3>
+    <div class="payment-icons">
+      <img src="images/visa.png" alt="Visa">
+      <img src="images/mastercard.png" alt="MasterCard">
+      <img src="images/paypal.png" alt="PayPal">
+      <img src="images/amex.png" alt="American Express">
+    </div>
+  </div>
+</footer>
+
+    <script type="module" src="scripts/tracking.js"></script>
+  </body>
+</html>

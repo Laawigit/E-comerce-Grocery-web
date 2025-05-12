@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.checkout-line-progress{
+  display: flex;
+  font-size: larger;
+  height: 50px;
+  width: 75%;
+  /* padding: 10px 50px; */
+  align-items: center;
+  justify-content: center;
+  margin: 20px 100px;
+  border-radius: 15px;
+}
+
+.checkout-line-progress .progress{
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(112, 112, 112);
+  border-top-right-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+  color: gray;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-line-progress .shipping-pickup{
+  margin-right: -1.2rem;
+  background-color: #ffffff;
+  border-left: 1px solid gray;
+  z-index: 30;
+}
+
+.checkout-line-progress .payment-method{
+  margin-right: -1.2rem;
+  background-color: rgb(9, 173, 146);
+  color: white;
+  font-weight: bold;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+/* Form container */
+.main-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 900px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for forms */
+.form-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: rgb(230, 49, 49);
+    font-size: 16px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+    }
+}

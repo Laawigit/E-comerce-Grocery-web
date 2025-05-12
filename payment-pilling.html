@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing and Payment Form</title>
+    <link rel="stylesheet" href="css/payment-pilling.css">
+</head>
+<body>
+    <div class="checkout-line-progress">
+      <div class="shipping-pickup progress">Shipping & Pickup</div>
+      <div class="payment-method progress">Payment Method</div>
+      <div class="review-orders progress">Review Orders</div>
+    </div>
+    <!-- Main Container -->
+    <div class="main-container">
+        <h2>Billing Address & Payment</h2>
+        <form id="billingForm">
+            <div class="form-grid">
+                <!-- Billing Address Section -->
+                <div class="form-section">
+                    <h3>Billing Address</h3>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                    <div class="error" id="error-fullname">Full Name is required</div>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="error-email">Email is required</div>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                    <div class="error" id="error-address">Address is required</div>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                    <div class="error" id="error-city">City is required</div>
+                </div>
+
+                <!-- Payment Section -->
+                <div class="form-section">
+                     <div class="cards">
+                    <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/discover.png" alt="Discover">
+                </div>
+                    <h3>Payment</h3>
+                    <label for="nameOnCard">Name on Card</label>
+                    <input type="text" id="nameOnCard" placeholder="Name on card">
+                    <div class="error" id="error-nameOnCard">Card name is required</div>
+
+                    <label for="cardNumber">Credit Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444">
+                    <div class="error" id="error-cardNumber">Credit card number is required</div>
+
+                    <label for="expMonth">Expiration Month</label>
+                    <input type="text" id="expMonth" placeholder="e.g., August">
+                    <div class="error" id="error-expMonth">Expiration month is required</div>
+
+                    <label for="expYear">Expiration Year</label>
+                    <input type="number" id="expYear" placeholder="e.g., 2025">
+                    <div class="error" id="error-expYear">Expiration year is required</div>
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="e.g., 123">
+                    <div class="error" id="error-cvv">CVV is required</div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="scripts/payment&pilling.js" type="module"></script>
+</body>
+</html>

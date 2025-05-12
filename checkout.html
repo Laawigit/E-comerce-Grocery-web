@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-line-progress">
+      <div class="shipping-pickup progress">Shipping & Pickup</div>
+      <div class="payment-method progress">Payment Method</div>
+      <div class="review-orders progress">Review Orders</div>
+    </div>
+    <main class="checkout-container">
+      <!-- Order Summary -->
+      <section class="order-summary">
+        <a href="javascript:void(0)"
+          ><button class="back-to-previous js-back-to-previous"><---</button></a
+        >
+        <h2>Order Summary</h2>
+        <div class="cart-items">
+          <!-- Dynamically generated items -->
+        </div>
+      </section>
+
+      <!-- Payment Summary -->
+      <section class="payment-summary js-payment-summary"></section>
+
+      <!-- Recommended Products -->
+      <section class="recommended-products">
+        <h2>Explore More Products</h2>
+        <div id="recommended-products" class="product-list">
+          <!-- Dynamically generated products -->
+        </div>
+      </section>
+    </main>
+    <!-- <script src="shop.js"></script> -->
+    <script src="scripts/checkout.js" type="module"></script>
+  </body>
+</html>
