@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+  width: 100%;
   background-color: #4caf50;
   color: #fff;
   padding: 20px 0;
@@ -20,6 +21,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   padding: 10px 20px;
   height: 60px;
   display: flex;
@@ -194,6 +196,7 @@ nav .logo {
 
 /* Hero Section */
 .hero {
+  width: 100%;
   background: url("../images/index/hero-2.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
@@ -222,6 +225,7 @@ nav .logo {
 
 /* Categories Section */
 .categories {
+  width: 100%;
   text-align: center;
   padding: 50px 20px;
 }
@@ -256,6 +260,7 @@ nav .logo {
 
 /* Featured Products Section */
 .featured-products {
+  width: 100%;
   text-align: center;
   padding: 50px 20px;
 }
@@ -289,6 +294,7 @@ nav .logo {
 
 /* Footer */
 footer {
+  width: 100%;
   background-color: #4caf50;
   color: #fff;
   padding: 25px;
@@ -419,49 +425,119 @@ footer {
   }
 }
 
-/* Responsive Design */
 
-/* Tablet View */
-@media (max-width: 1024px) {
+/* Add this at the end of your existing CSS */
+
+/* Mobile View - max-width: 600px */
+@media (max-width: 600px) {
+  body {
+    padding-top: 80px;
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .nav {
+    padding: 1px 1px;
+    height: auto;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav .logo {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .cart-popup-container {
+    width: 100%;
+    top: 80px;
+    height: 70vh;
+  }
+
+  .hero {
+    padding: 40px 10px;
+    height: 300px;
+  }
+
   .hero h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
+
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
   }
+
   .category-container,
   .products-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
+
+  .category-card,
+  .product-card {
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .cart-item .item-details-container {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .cart-footer .subtotal-container {
+    margin-left: 0;
+    text-align: center;
+  }
+
   footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/* Tablet & Desktop View - min-width:601px */
+@media (min-width: 601px) {
+  .category-container,
+  .products-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .hero {
-    padding: 50px 10px;
-  }
-  .hero h1 {
-    font-size: 28px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
+/* Large Desktop View - min-width: 992px */
+@media (min-width: 992px) {
   .category-container,
   .products-container {
-    grid-template-columns: 1fr;
-  }
-  footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

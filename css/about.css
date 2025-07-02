@@ -15,6 +15,7 @@ body {
 
 /* Header & Navigation */
 .header {
+  width: 100%;
   background-color:#4caf50;
   color: #fff;
   padding: 20px 0;
@@ -445,3 +446,113 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Add this at the end of your existing CSS */
+
+/* Mobile View - max-width: 600px */
+@media (max-width: 600px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .nav {
+    padding: 5px 10px;
+    height: auto;
+  }
+
+  nav .logo {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .cart-popup-container {
+    width: 100%;
+    top: 80px;
+    height: 70vh;
+  }
+
+  .hero {
+    padding: 40px 10px;
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .category-container,
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card,
+  .product-card {
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .cart-item .item-details-container {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .cart-footer .subtotal-container {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/* Tablet & Desktop View - min-width:601px */
+@media (min-width: 601px) {
+  .category-container,
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Desktop View - min-width: 992px */
+@media (min-width: 992px) {
+  .category-container,
+  .products-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
